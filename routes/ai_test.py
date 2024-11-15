@@ -92,7 +92,7 @@ def storing_statistical():
 @ai.route('/payres', methods=['GET', 'POST'], strict_slashes=False)  # 首页路由
 def payres():
     data = request.get_json()
-    logger.debug("这是一条调试信息")
+    logger.debug(data)
     print(data)
     return "success"
 
