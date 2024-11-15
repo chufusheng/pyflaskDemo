@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+<h2>
+    <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/avatar.png') }}">
+    {{ name }}'s Watchlist
+</h2>
+...
+<ul class="movie-list">
+    {% for movie in movies %}
+    <li>{{ movie.title }} - {{ movie.year }}
+    </li>
+    {% endfor %}
+</ul>
+...
+<img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='images/totoro.gif') }}">
+<button class="blue"><i class="fa fa-star"></i> .blue</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/kickstart.js')}}"></script> <!-- KICKSTART -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/kickstart.css')}}" media="all"/> <!-- KICKSTART -->

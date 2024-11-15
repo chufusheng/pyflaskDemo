@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>请求接口</title>
+    <style>
+    #input {
+      width: 400px; /* 设置输入框的宽度 */
+      height: 40px; /* 设置输入框的高度 */
+      font-size: 16px; /* 设置输入框的字体大小 */
+    }
+
+    </style>
+    <script>
+    function sendRequest() {
+      var url = "http://172.16.112.44:5000/ai/ai_chat";
+      var inputValue = document.getElementById("input").value; // 获取输入框的值
+      var resultTextarea = document.getElementById("result"); // 结果展示文本框元素
+      var resultList = document.getElementById("result"); // 结果展示列表元素
+
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", url + "?msg=" + inputValue + "&oldRes=" + displayFromLocal() , true); // 将输入值作为查询参数附加到URL中
+      xhr.onreadystatechange = function() {
+           if (xhr.readyState === 4 && xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          // 处理接口响应数据
+          var resultItems = response.res; // 假设结果是一个数组
+
+          saveToLocal(response.res); // 调用保存到Cookie的函数
+
+          resultList.innerHTML = ""; // 清空列表内容
+
+          // 将每个结果添加为列表项
+          resultItems.forEach(function(item) {
+            var listItem = document.createElement("li");
+            // console.log(item)
+            listItem.textContent = item.content;
+            resultList.appendChild(listItem);
+          });
+        }
+      };
+      xhr.send();
+    }
+
+     function saveToLocal(result) {
+      localStorage.setItem("result", JSON.stringify(result));
+    }
+
+    function displayFromLocal() {
+      var result = localStorage.getItem("result");
+      if (result === null){
+      	return ''
+      }
+      return result
+
+    }
+
+    </script>
+</head>
+<body>
+<ul id="result"></ul>
+<br><br><!-- 用于展示结果的无序列表 -->
+<input type="text" id="input" placeholder="输入值"><br><br>
+<button onclick="sendRequest()">发送请求</button>
+<br><br>
+</body>
+</html>
