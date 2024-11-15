@@ -1,0 +1,11 @@
+2024-11-15 16:50:15,439 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-11-15 16:50:15,439 - INFO -  * Running on http://172.16.160.123:5000/ (Press CTRL+C to quit)
+2024-11-15 16:51:06,334 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-11-15 16:51:06,335 - INFO -  * Running on http://172.16.160.123:5000/ (Press CTRL+C to quit)
+2024-11-15 16:51:14,836 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-11-15 16:51:14,836 - INFO -  * Running on http://172.16.160.123:5000/ (Press CTRL+C to quit)
+2024-11-15 16:51:33,134 - DEBUG - 这是一条调试信息
+2024-11-15 16:51:33,140 - INFO - 127.0.0.1 - - [15/Nov/2024 16:51:33] "POST /ai/payres HTTP/1.1" 200 -

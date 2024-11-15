@@ -1,6 +1,12 @@
 from flask import Blueprint, render_template, request, jsonify
 
 from db.sql_manager import SQLManager
+import logging
+
+# 配置日志记录器，将日志输出到指定文件 'example.log'
+logging.basicConfig(filename='example.log', level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 
 ai = Blueprint('ai', __name__)
@@ -86,6 +92,7 @@ def storing_statistical():
 @ai.route('/payres', methods=['GET', 'POST'], strict_slashes=False)  # 首页路由
 def payres():
     data = request.get_json()
+    logger.debug("这是一条调试信息")
     print(data)
     return "success"
 

@@ -22,15 +22,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pipr_install.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/db/password_info.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/ai/photo.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/test.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/db/password_info.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/pipr_install.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file:///Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/logging/__init__.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/db/sql_manager.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/logging/__init__.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="2D3fjDMI5C5TbGnlEL7U41ERmqc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
