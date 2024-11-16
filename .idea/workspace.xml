@@ -4,7 +4,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2044974d-4adf-473a-a92b-38d7a2f74db9" name="Default Changelist" comment="" />
+    <list default="true" id="2044974d-4adf-473a-a92b-38d7a2f74db9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/ai_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ai_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/spinning.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_spinning.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/fonts/font-awesome-4.2.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/breadcrumbs-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/bx_loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_loading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_nav_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_nav_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_ne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_nw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_se.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_sw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_shadow_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_title_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_title_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_title_over.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancy_title_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancybox-x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancybox-y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/fancybox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/jquery.easing-1.3.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/jquery.fancybox-1.3.4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/jquery.fancybox-1.3.4.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/fancybox/jquery.mousewheel-3.0.4.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/gray_jean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/img/icon-arrow-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/jquery.fancybox-1.3.4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/kickstart-buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/kickstart-forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/kickstart-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/kickstart-menus.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/kickstart-slideshow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/kickstart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/tiptip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/tests1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/totoro.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kickstart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ai/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ai/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ai/photo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,8 +109,6 @@
     <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/db/password_info.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/ai/photo.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/test.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/db/sql_manager.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/logging/__init__.py" root0="SKIP_INSPECTION" />
@@ -41,15 +123,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/ai" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/templates/ai" />
       <recent name="$PROJECT_DIR$/service/thingverse" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/static" />
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>

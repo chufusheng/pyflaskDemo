@@ -3,7 +3,7 @@ from flask import Flask
 from routes.ai_test import ai
 from flask_cors import *
 
-app = Flask(__name__)  # 实例化flask
+app = Flask(__name__, static_folder='static')  # 实例化flask
 CORS(app, supports_credentials=True)
 
 app.register_blueprint(ai, url_prefix='/ai')

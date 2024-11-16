@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request,send_from_directory
 
 from db.sql_manager import SQLManager
 from config.log_config import setup_logging
@@ -21,10 +21,16 @@ movies = [
     {'title': 'The Pork of Music', 'year': '2012'},
 ]
 
+#
+# @ai.route('/')  # 首页路由
+# def hello_world():
+#     return render_template('ai/index.html', name=name, movies=movies)
+
 
 @ai.route('/')  # 首页路由
 def hello_world():
-    return render_template('ai/index.html', name=name, movies=movies)
+    return render_template('index.html')
+
 
 
 @ai.route('/upload', methods=['GET', 'POST'])
