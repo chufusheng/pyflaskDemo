@@ -79,10 +79,17 @@ def hello_world():
 
 @ai.route('/payres', methods=['GET', 'POST'], strict_slashes=False)  # 首页路由
 def payres():
-    data = request.get_json()
-    log.info(data)
-    log.debug("@ai.route('/payres', methods=['GET', 'POST'], strict_slashes=False)  # 首页路由")
-    print(data)
+    if request.method == 'GET':
+        log.info("get")
+        args = request.args
+        log.info(f"GET请求参数: {args}")
+        print(f"GET请求参数: {args}")
+    elif request.method == 'POST':
+        log.info("post")
+        data = request.get_json()
+        log.info(data)
+        print(data)
+
     return "success"
 
 #
