@@ -3,24 +3,24 @@ import math
 
 import pymysql
 from pymysql import OperationalError
-
-DB_CONFIG = {
-    "host": "001.pub.mysql.qa.wacai.info",
-    "port": 3307,
-    "user": "qa_conn",
-    "passwd": "qa_conn",
-    "db": "qa_tool",
-    "charset": "utf8"
-}
-
+#
 # DB_CONFIG = {
-#     "host": "127.0.0.1",
+#     "host": "001.pub.mysql.qa.wacai.info",
 #     "port": 3307,
-#     "user": "root",
-#     "passwd": "Chu@123455",
-#     "db": "tool_app",
+#     "user": "qa_conn",
+#     "passwd": "qa_conn",
+#     "db": "qa_tool",
 #     "charset": "utf8"
 # }
+
+DB_CONFIG = {
+    "host": "rm-bp1pvlqh2itfpe06q6o.mysql.rds.aliyuncs.com",
+    "port": 3306,
+    "user": "kun",
+    "passwd": "root@123456",
+    "db": "mitu_toll",
+    "charset": "utf8"
+}
 
 
 # DB_CONFIG = {

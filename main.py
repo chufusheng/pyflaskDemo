@@ -1,12 +1,15 @@
 # from flask_apscheduler import APScheduler
 from flask import Flask
 from routes.ai_test import ai
+from routes.order_routes import order
+
 from flask_cors import *
 
 app = Flask(__name__, static_folder='assets')  # 实例化flask
 CORS(app, supports_credentials=True)
 
 app.register_blueprint(ai, url_prefix='/ai')
+app.register_blueprint(order, url_prefix='/order')
 
 #
 # scheduler = APScheduler()  # 实例化APScheduler

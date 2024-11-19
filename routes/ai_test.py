@@ -1,8 +1,6 @@
 from flask import Blueprint, render_template, request
+from log_config import CustomLogger as log
 
-from log_config import setup_logging
-
-log = setup_logging()
 
 ai = Blueprint('ai', __name__)
 
