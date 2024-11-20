@@ -14,5 +14,5 @@ def validate_required_fields(data, required_fields):
     """
     for field in required_fields:
         if field not in data:
-            return jsonify({"error": f"{field} is missing"}), 400
+            return jsonify({"error": "param is missing"}), 400
     return True

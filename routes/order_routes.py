@@ -7,7 +7,6 @@ from routes.route_utils import validate_required_fields
 
 import uuid
 
-
 order = Blueprint('order', __name__)
 
 
@@ -16,7 +15,7 @@ def order_init():
     data = request.get_json()
     client_ip = request.remote_addr
 
-    log.info("/order/init  data = " +  str(data))
+    log.info("/order/init  data = " + str(data))
 
     # 校验请求参数
     required_fields = ['user_id', 'user_name', 'user_birthday', 'birthday_hour', 'user_gender', 'product_key']
@@ -35,9 +34,49 @@ def order_init():
                     status=1, user_name=data['user_name'], user_birthday=data['user_birthday'],
                     birthday_hour=data['birthday_hour'], user_gender=data['user_gender'],
                     product_id=product_info['product_key'], product_name=product_info['product_name'], yunshi_status=1
-                    , pay_time=None, yunshi=None,ip=client_ip)
+                    , pay_time=None, yunshi=None, ip=client_ip)
 
     return "success"
+
+
+@order.route('/list', methods=['GET'], strict_slashes=False)  # 首页路由
+def order_list():
+    data = request.args.to_dict()
+    client_ip = request.remote_addr
+
+    log.info(" client_ip = " + client_ip + "/order/list  data = " + str(data))
+
+    # 校验请求参数
+    required_fields = ['user_id']
+    validation_result = validate_required_fields(data, required_fields)
+    if validation_result is not True:
+        return validation_result
+
+    order_info = get_order_list_by_user_id(data['user_id'])
+
+    log.info(" order_info = " + str(order_info))
+
+    return jsonify(order_info)
+
+
+@order.route('/info', methods=['GET'], strict_slashes=False)  # 首页路由
+def order_info():
+    data = request.args.to_dict()
+    client_ip = request.remote_addr
+
+    log.info(" client_ip = " + client_ip + "/order/info  data = " + str(data))
+
+    # 校验请求参数
+    required_fields = ['order_no']
+    validation_result = validate_required_fields(data, required_fields)
+    if validation_result is not True:
+        return validation_result
+
+    order_info = get_one_order_by_order_no(data['order_no'])
+
+    log.info(" order_info = " + str(order_info))
+
+    return jsonify(order_info)
 
 
 #

@@ -16,7 +16,7 @@ def get_list():
 def get_one_by_user_id(user_id):
     sql = ("select id,name,user_id,ip,mobile,DATE_FORMAT(created_time, '%Y-%m-%d %H:%i:%s') as created_time,"
            "DATE_FORMAT(updated_time, '%Y-%m-%d %H:%i:%s')  as update_time from user_info "
-           "where user_id ={}").format(str(user_id))
+           "where user_id ='{}'").format(str(user_id))
     data = mitu_tool.get_one(sql)
     return data
 
@@ -51,7 +51,7 @@ def update_user_info(user_id, name=None, ip=None, mobile=None):
         raise ValueError("至少需要提供一个要更新的字段值。")
 
     update_fields_str = ", ".join(update_fields)
-    sql = f"UPDATE user_info SET {update_fields_str}, updated_time = CURRENT_TIMESTAMP WHERE user_id = {user_id}"
+    sql = f"UPDATE user_info SET {update_fields_str}, updated_time = CURRENT_TIMESTAMP WHERE user_id = '{user_id}'"
     args = tuple(update_values)
 
     mitu_tool.moddify(sql, args)

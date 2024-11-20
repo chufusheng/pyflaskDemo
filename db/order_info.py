@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from db.sql_manager import SQLManager
 
 mitu_tool = SQLManager('mitu_tool')
@@ -23,7 +25,7 @@ def get_order_list_by_user_id(user_id):
            "DATE_FORMAT(updated_time, '%Y-%m-%d %H:%i:%s') as updated_time, "
            "user_name,user_birthday,birthday_hour,user_gender,product_id, product_name, yunshi,yunshi_status "
            "from order_info "
-           "where user_id ={}").format(str(user_id))
+           "where user_id ='{}'").format(str(user_id))
     data = mitu_tool.get_list(sql)
     return data
 
@@ -89,7 +91,7 @@ def update_order_info(order_no=None, amount=None, status=None, pay_time=None, pr
         raise ValueError("至少需要提供一个要更新的字段值。")
 
     update_fields_str = ", ".join(update_fields)
-    sql = f"UPDATE order_info SET {update_fields_str}, updated_time = CURRENT_TIMESTAMP WHERE order_no = {order_no}"
+    sql = f"UPDATE order_info SET {update_fields_str} WHERE order_no = '{order_no}'"
     args = tuple(update_values)
 
     mitu_tool.moddify(sql, args)
@@ -101,5 +103,6 @@ if __name__ == '__main__':
     # print(get_one_by_user_id('1234562'))
     # print(save_order_info("1234562", '123456', 100, 1, '2024-11-18 19:42:33', 1, '测试商品', '沙发发啊大大八十多'))
     # update_order_info('123456',  10000, 1, '2024-11-18 19:42:33', 1, '测试商品', '沙发发啊大大八十多')
+    update_order_info(order_no='f65116ef1b7d4cdd', pay_time=datetime.now(),status=3)
     print(get_order_list())
-    print(get_one_order_by_order_no('39533257b97b4b21'))
+    # print(get_order_list_by_user_id('fwqerew'))

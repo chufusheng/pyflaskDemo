@@ -2,6 +2,8 @@
 from flask import Flask
 from routes.ai_test import ai
 from routes.order_routes import order
+from routes.pay_routes import pay
+
 
 from flask_cors import *
 
@@ -10,6 +12,8 @@ CORS(app, supports_credentials=True)
 
 app.register_blueprint(ai, url_prefix='/ai')
 app.register_blueprint(order, url_prefix='/order')
+app.register_blueprint(pay, url_prefix='/pay')
+
 
 #
 # scheduler = APScheduler()  # 实例化APScheduler
