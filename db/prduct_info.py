@@ -19,7 +19,7 @@ def get_one_product_info_by_product_key(product_key):
            "DATE_FORMAT(created_time, '%Y-%m-%d %H:%i:%s') as created_time, "
            "DATE_FORMAT(updated_time, '%Y-%m-%d %H:%i:%s') as updated_time "
            "from product_info "
-           "where product_key ={}").format(str(product_key))
+           "where product_key ='{}'").format(str(product_key))
     data = mitu_tool.get_one(sql)
     return data
 
