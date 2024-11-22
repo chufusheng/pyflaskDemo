@@ -23,20 +23,26 @@ def order_init():
     if validation_result is not True:
         return validation_result
 
-    product_info = get_one_product_info_by_product_key(data['product_key'])
+    try:
 
-    if not product_info:
-        return jsonify({"error": f"未查询到{data['product_key']} 的产品信息"}), 400
+        product_info = get_one_product_info_by_product_key(data['product_key'])
 
-    order_no = uuid.uuid4().hex[:16]
+        if not product_info:
+            return jsonify({"error": f"未查询到{data['product_key']} 的产品信息"}), 400
 
-    save_order_info(user_id=data['user_id'], order_no=order_no, amount=product_info['amount'],
-                    status=1, user_name=data['user_name'], user_birthday=data['user_birthday'],
-                    birthday_hour=data['birthday_hour'], user_gender=data['user_gender'],
-                    product_id=product_info['product_key'], product_name=product_info['product_name'], yunshi_status=1
-                    , pay_time=None, yunshi=None, ip=client_ip)
+        order_no = uuid.uuid4().hex[:16]
 
-    return "success"
+        save_order_info(user_id=data['user_id'], order_no=order_no, amount=product_info['amount'],
+                        status=1, user_name=data['user_name'], user_birthday=data['user_birthday'],
+                        birthday_hour=data['birthday_hour'], user_gender=data['user_gender'],
+                        product_id=product_info['product_key'], product_name=product_info['product_name'],
+                        yunshi_status=1
+                        , pay_time=None, yunshi=None, ip=client_ip)
+    except Exception as e:
+        log.error(e)
+        return jsonify({"error": "系统错误"}), 500
+
+    return jsonify({"msg": "success", "order_no": order_no})
 
 
 @order.route('/list', methods=['GET'], strict_slashes=False)  # 首页路由
@@ -77,6 +83,7 @@ def order_info():
     log.info(" order_info = " + str(order_info))
 
     return jsonify(order_info)
+
 
 
 #

@@ -92,10 +92,10 @@ def doubao_ai_chat(order_no):
     user_gender = order_info['user_gender']
 
     res = yunshi_req_format(2, user_birthday, birthday_hour, user_gender, product_info['product_yunshi'])
-    log.info("chat_ai res=   " + res)
+    log.info("chat_ai res=   " + str(res))
 
     if res:
-        update_order_info(order_no=order_no, yunshi=res, yunshi_status=2)
+        update_order_info(order_no=order_no, yunshi=str(res), yunshi_status=3)
 
 
 @pay.route('/test')  # 首页路由
