@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2044974d-4adf-473a-a92b-38d7a2f74db9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/doubao_ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/doubao_ai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,24 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.aikelai_pay_service.executor": "Debug",
-    "Python.doubao_ai.executor": "Debug",
-    "Python.main.executor": "Debug",
-    "Python.order_info.executor": "Debug",
-    "Python.order_routes.executor": "Run",
-    "Python.pay_info.executor": "Run",
-    "Python.pay_routes.executor": "Run",
-    "Python.prduct_info.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.user_info.executor": "Run",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/pro9q/PycharmProjects/pyflaskDemo/templates",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.aikelai_pay_service.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.doubao_ai.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.order_info.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.order_routes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pay_info.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pay_routes.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.prduct_info.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user_info.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pro9q/PycharmProjects/pyflaskDemo/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
@@ -76,7 +77,7 @@
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.pay_routes">
     <configuration name="doubao_ai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyflaskDemo" />
       <option name="ENV_FILES" value="" />
@@ -189,10 +190,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.doubao_ai" />
         <item itemvalue="Python.pay_routes" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.doubao_ai" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.order_info" />
       </list>
     </recent_temporary>
@@ -248,11 +249,6 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/routes/pay_routes.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/db/order_info.py</url>
           <line>106</line>
           <option name="timeStamp" value="32" />
@@ -261,16 +257,6 @@
           <url>file://$PROJECT_DIR$/db/order_info.py</url>
           <line>105</line>
           <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/routes/pay_routes.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/routes/pay_routes.py</url>
@@ -284,23 +270,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
-          <line>51</line>
+          <line>52</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
-          <line>59</line>
+          <line>60</line>
           <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
           <line>89</line>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
+          <line>142</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/service/doubao_ai.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

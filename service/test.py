@@ -41,24 +41,74 @@ text = '''
 
 '''
 
+json_res = {'choices': [{'finish_reason': 'stop', 'index': 0, 'logprobs': None, 'message': {
+    'content': '需要注意的是，周易算命是一种传统文化的表现形式，其结果并没有科学依据，不能被视为对个人命运的准确预测。以下内容仅供娱乐：\n\n---\n\n# 《周易算命结果》\n\n## 一、命盘分析\n根据您提供的出生时间，2018年3月9日12点，男生，对应的八字为：戊戌年乙卯月庚子日壬午时。\n\n庚金生于卯月，木旺金囚，日主庚金不得月令之助。年柱戊戌土生金，月干乙木耗金，日支子水泄金，时干壬水泄金，时支午火克金。综合来看，日主庚金偏弱，喜土金帮扶，忌木水火。\n\n## 二、婚姻运势\n在婚姻方面，命主的配偶可能会是一个聪明、机智、有才华的人。对方可能具有较强的沟通能力和表达能力，能够与命主进行良好的交流和互动。然而，命主在婚姻中需要注意避免过于强势和固执，要学会尊重和理解对方的想法和感受，这样才能保持婚姻的和谐与稳定。\n\n从流年运势来看，命主在适婚年龄时，可能会遇到一些感情上的波折和挑战。例如，在某些年份可能会出现争吵、矛盾等情况，但只要双方能够相互包容、理解，共同努力克服困难，还是能够顺利度过这些难关，走向幸福的婚姻生活。\n\n## 三、对方感情特点\n命主的配偶在感情方面可能会比较细腻、敏感，注重情感的交流和沟通。对方可能会比较在意命主的感受和需求，会尽力为命主创造一个温馨、和谐的家庭氛围。同时，对方也可能会有一些情绪化的表现，需要命主在相处过程中给予更多的关心和安慰。\n\n## 四、桃花运势\n命主的桃花运势较为一般。在年轻时，可能会有一些短暂的桃花出现，但大多不是正缘。命主在感情方面需要保持清醒的头脑，不要被一时的冲动所迷惑，要学会分辨真正适合自己的人。在中年以后，命主的桃花运势会有所好转，可能会遇到一个真正与自己相互欣赏、相互扶持的人。\n\n## 五、财运\n命主的财运总体来说还算不错。由于日主庚金偏弱，喜土金帮扶，因此命主在从事与土、金相关的行业时，可能会有较好的财运。例如，房地产、建筑、金属加工等行业。此外，命主在投资理财方面也需要谨慎一些，避免盲目跟风和冒险投资，以免造成不必要的损失。\n\n从流年运势来看，命主在青年时期财运可能会比较起伏不定，需要通过自己的努力和奋斗才能逐渐积累财富。在中年以后，命主的财运会逐渐稳定下来，并且有机会获得较大的财富收益。\n\n## 六、综合运势\n总体来说，命主的运势较为平稳。在事业方面，命主需要不断努力学习和提升自己的能力，才能在竞争激烈的社会中脱颖而出。在健康方面，命主需要注意呼吸系统和消化系统的问题，平时要多注意休息和饮食健康。在人际关系方面，命主需要学会与人相处的技巧，保持良好的人际关系，这样才能为自己的事业和生活带来更多的帮助和支持。\n\n## 七、星座内容\n2018年3月9日出生的人是双鱼座。双鱼座的人通常具有丰富的想象力和创造力，他们善良、敏感、富有同情心，对艺术和音乐有着浓厚的兴趣。双鱼座的人在人际关系中往往表现得比较温和、友善，容易与人相处。然而，双鱼座的人有时也会显得过于情绪化和优柔寡断，需要学会控制自己的情绪和做出果断的决策。\n\n---\n\n以上内容仅供娱乐，希望您不要过分迷信。命运是掌握在自己手中的，通过自己的努力和奋斗，才能创造出美好的未来。',
+    'role': 'assistant'}}], 'created': 1732527028, 'id': '02173252698516982365d4a5b5274956b3afa8f956d92c4822444',
+            'model': 'doubao-pro-128k-240628', 'object': 'chat.completion',
+            'usage': {'completion_tokens': 846, 'prompt_tokens': 79, 'total_tokens': 925}}
+
 
 def extract_content_by_title(title_list, text):
-    # 将文本按段落分割
-    sections = re.split(r'##\s+(\S+、\S+)', text)
+
     result_list = []
 
-    # 遍历分割后的内容，提取标题和内容
-    for i in range(1, len(sections), 2):
-        section_title = sections[i].strip()  # 提取标题
-        section_content = sections[i + 1].strip() if i + 1 < len(sections) else ''  # 提取对应内容
+    line_content = text.splitlines()
+    for line in line_content[:]:
+        if count_chinese_characters(line) == 0:
+            line_content.remove(line)
 
-        # 检查标题是否在目标标题列表中
-        for target_title in title_list:
-            if target_title in section_title:
-                result_list.append({"title": target_title, "res": section_content})
-                break
+    title_indexs = []
+
+    for title in title_list:
+        for i, line_new in enumerate(line_content):
+            if (title in line_new) & (count_chinese_characters(line_new) < 10):
+                title_indexs.append(i)
+
+    for i, t_index in enumerate(title_indexs):
+        if i == len(title_indexs) - 1:
+            print("last")
+            # result_list.append({"title": title_list[i], "res": ''.join(line_content[t_index + 1:])})
+        else:
+            result_list.append({"title": title_list[i], "res": ''.join(line_content[t_index + 1:title_indexs[i + 1]])})
 
     return json.dumps(result_list, ensure_ascii=False, indent=2)
 
+
+def count_chinese_characters(text):
+    # 匹配汉字的正则表达式
+    pattern = r'[\u4e00-\u9fff]'
+    # 使用re.findall找到所有汉字
+    chinese_characters = re.findall(pattern, text)
+    return len(chinese_characters)
+
+
 if __name__ == '__main__':
-    print(extract_content_by_title(['命盘分析', '婚姻运势', '桃花运势', '财运', '综合运势'], text))
+    t_list = ['命盘分析', '婚姻运势', '对方感情特点', '桃花运势', '财运', '综合运势', '星座内容']
+    # print(extract_content_by_title(['命盘分析', '婚姻运势', '桃花运势', '财运', '综合运势'], text))
+    data_res = []
+
+    res = json_res['choices'][0]['message']['content']
+
+    print(extract_content_by_title(t_list,res))
+
+    # line_content = res.splitlines()
+    # for line in line_content[:]:
+    #     if count_chinese_characters(line) == 0:
+    #         line_content.remove(line)
+    #
+    # title_indexs = []
+    #
+    # for title in t_list:
+    #     for i, line_new in enumerate(line_content):
+    #         if (title in line_new) & (count_chinese_characters(line_new) < 10):
+    #             title_indexs.append(i)
+    #
+    # for i, t_index in enumerate(title_indexs):
+    #     if i == len(title_indexs) - 1:
+    #         data_res.append({"title": t_list[i], "res": ''.join(line_content[t_index + 1:])})
+    #     else:
+    #         data_res.append({"title": t_list[i], "res": ''.join(line_content[t_index + 1:title_indexs[i + 1]])})
+    #
+    # print(data_res)
+    #
+
