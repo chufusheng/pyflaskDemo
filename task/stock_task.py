@@ -1,7 +1,7 @@
 import json
 import time
 
-from task.stock_scrapy import get_stock_data
+from task.stock_scrapy2 import get_stock_data
 from db.stock_scrapy_record import *
 
 # 长城汽车
