@@ -3,7 +3,7 @@ import requests
 
 def get_stock_data(code):
     # 模拟 API 请求的 URL 和请求头
-    api_url = 'http://qt.gtimg.cn/q=sh{}'  # 假设的 API 地址
+    api_url = 'http://qt.gtimg.cn/q={}'  # 假设的 API 地址
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.9',
