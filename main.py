@@ -15,8 +15,8 @@ class Config(object):
             'func': 'task.stock_task:stock_scrapy_job',  # 指定任务函数
             # 'args': (1, 2),  # 任务参数
             'trigger': 'cron',  # 使用 cron 表达式触发
-            'minute': '*/1',  # 每 10 分钟执行一次
-            'hour': '9-11,13-20',  # 只在 9:30 到 11:30 和 13:00 到 15:00 之间执行
+            'minute': '*/10',  # 每 10 分钟执行一次
+            'hour': '9-11,13-15',  # 只在 9:30 到 11:30 和 13:00 到 15:00 之间执行
             'max_instances': 1  # 限制最多只能有一个实例在执行
 
         }
