@@ -7,8 +7,6 @@
     <list default="true" id="2044974d-4adf-473a-a92b-38d7a2f74db9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task/stock_scrapy2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task/stock_scrapy2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task/stock_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/task/stock_task.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
